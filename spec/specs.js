@@ -1,5 +1,5 @@
 describe('replaceWord', function() {
-  it('will find a word in a string of words', function(){
+  it('will find a word with another word in a string of words', function(){
     var string = 'The night is dark and full of terrors.';
     var wordToReplace = 'dark';
     var newWord = 'cold'
@@ -7,10 +7,10 @@ describe('replaceWord', function() {
   });
 });
 
-// describe('containsWord', function() {
-//   it('will find a word in a string of words', function(){
-//     var string = 'The night is dark and full of terrors.';
-//     var wordToReplace = 'dark';
-//     expect(containsWord(string, wordToReplace).to.equal(true);
-//   });
-// });
+describe('containsWord', function() {
+  it('will find a word in a string of words', function() {
+    var string = 'The night is dark and full of terrors.';
+    var wordToReplace = 'dark';
+    expect(containsWord(string, wordToReplace)).to.equal(true);
+  });
+});
