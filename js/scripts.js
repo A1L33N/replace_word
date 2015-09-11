@@ -26,11 +26,13 @@ $(document).ready(function() {
     var wordToReplace = ($('input#word-to-replace').val());
     var newWord = ($('input#new-word').val());
 
-    var result = replaceWord(string, wordToReplace, newWord);
-
-    $('#result').text(result);
-
-    $('.result').show();
-    event.preventDefault();
+    if (containsWord(string, wordToReplace)) {
+      var result = replaceWord(string, wordToReplace, newWord);
+      $('#result').text(result);
+      $('.result').show();
+      event.preventDefault();
+    } else {
+      alert(wordToReplace + " is not in that string!")
+    };
   });
 });
