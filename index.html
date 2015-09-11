@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Sub</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.11.3.js"></script>
+   <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Word Substitute</h1>
+      <div class="row">
+        <form id="word-sub" >
+          <div class="form-group">
+            <p><label for="string">Enter a sentence: </label>
+            <input type="text" name="string" id="string" required></p>
+            <p><label for="word-to-replace">Pick a word to find: <label>
+            <input type="text" name="word-to-replace" id="word-to-replace" required></p>
+            <p><label for="new-word">Enter a word to substitute: </label>
+            <input type="text" name="new-word" id="new-word" required></p>
+          </div>
+          <button type="submit">Find and Replace!</button>
+        </form>
+      </div>
+      <br><br><br>
+      <div class="row">
+        <div class="result">
+          <p>Your new sentence is: "<span id="result"></span>"</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
